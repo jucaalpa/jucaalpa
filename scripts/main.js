@@ -112,7 +112,7 @@ function subscribeUser() {
     applicationServerKey: applicationServerKey
   })
   .then(function(subscription) {
-    console.log('User is subscribed.');
+    console.log('User is subscribed.', subscription);
 
     updateSubscriptionOnServer(subscription);
 
