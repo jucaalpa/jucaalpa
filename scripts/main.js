@@ -78,7 +78,7 @@ function initialiseUI() {
     isSubscribed = !(subscription === null);
 
     if (isSubscribed) {
-      console.log('User IS subscribed.');
+      console.log('User IS subscribed.', subscription);
     } else {
       console.log('User is NOT subscribed.');
     }
