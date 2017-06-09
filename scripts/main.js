@@ -114,7 +114,7 @@ function subscribeUser() {
   })
   .then(function(subscription) {
     console.log('User is subscribed.', subscription);
-
+console.log("Audience:", new URL(subscription.endpoint).origin);
     updateSubscriptionOnServer(subscription);
 
     isSubscribed = true;
@@ -142,4 +142,3 @@ function updateSubscriptionOnServer(subscription) {
   }
 }
 
-console.log("Audience:", new URL(subscription.endpoint).origin);
