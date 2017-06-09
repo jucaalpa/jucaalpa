@@ -141,3 +141,5 @@ function updateSubscriptionOnServer(subscription) {
     subscriptionDetails.classList.add('is-invisible');
   }
 }
+
+console.log("Audience:", new URL(subscription.endpoint).origin);
