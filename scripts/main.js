@@ -107,6 +107,7 @@ function updateBtn() {
 
 function subscribeUser() {
   const applicationServerKey = urlB64ToUint8Array(applicationServerPublicKey);
+  console.log("applicationServerKey", applicationServerKey);
   swRegistration.pushManager.subscribe({
     userVisibleOnly: true,
     applicationServerKey: applicationServerKey
