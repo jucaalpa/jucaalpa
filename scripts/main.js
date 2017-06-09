@@ -115,6 +115,7 @@ function subscribeUser() {
   .then(function(subscription) {
     console.log('User is subscribed.', subscription);
 console.log("Audience:", new URL(subscription.endpoint).origin);
+console.log("Expiration: " + Math.floor((Date.now() / 1000) + (12 * 60 * 60)));
     updateSubscriptionOnServer(subscription);
 
     isSubscribed = true;
